@@ -1,135 +1,94 @@
 {
-  "posts": [
+  "code": "3002",
+  "message": "주변 PICK들이 조회되었습니다.",
+  "data": [
     {
-      "body": "김동민1",
-      "author": "안녕1",
-      "id": "1"
+      "avatarId": 11,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 132,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling%2BCat%2Bwith%2BHeart-Eyes_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling+Cat+with+Heart-Eyes.png"
+      },
+      "prefix": {
+        "prefixId": 83,
+        "content": "해도안되는"
+      },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["테니스", "스노보드"],
+      "disLikes": ["어드벤처", "EDM"]
     },
     {
-      "body": "김동민2",
-      "author": "안녕2",
-      "id": "2"
+      "avatarId": 12,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 150,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Thinking%2BFace_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Thinking+Face.png"
+      },
+      "prefix": {
+        "prefixId": 23,
+        "content": "알통많은"
+      },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["레게", "서부영화", "비즈니스 캐주얼"],
+      "disLikes": ["바르셀로나", "배드민턴", "메탈"]
     },
     {
-      "body": "김동민3",
-      "author": "안녕3",
-      "id": "3"
+      "avatarId": 13,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 95,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Left%2BSpeech%2BBubble_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Left+Speech+Bubble.png"
+      },
+      "prefix": {
+        "prefixId": 88,
+        "content": "개털인"
+      },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["초밥", "딤섬"],
+      "disLikes": ["공포", "청춘"]
     },
     {
-      "body": "김동민4",
-      "author": "안녕4",
-      "id": "4"
-    },
-    {
-      "body": "김동민5",
-      "author": "안녕5",
-      "id": "5"
-    },
-    {
-      "body": "김동민6",
-      "author": "안녕6",
-      "id": "6"
-    },
-    {
-      "body": "김동민7",
-      "author": "안녕7",
-      "id": "7"
-    },
-    {
-      "body": "김동민8",
-      "author": "안녕8",
-      "id": "8"
-    },
-    {
-      "body": "김동민9",
-      "author": "안녕9",
-      "id": "9"
-    },
-    {
-      "body": "김동민10",
-      "author": "안녕10",
-      "id": "10"
-    },
-    {
-      "body": "김동민11",
-      "author": "안녕11",
-      "id": "11"
-    },
-    {
-      "body": "김동민12",
-      "author": "안녕12",
-      "id": "12"
-    },
-    {
-      "body": "김동민13",
-      "author": "안녕",
-      "id": "13"
-    },
-    {
-      "body": "김동민14",
-      "author": "안녕",
-      "id": "14"
-    },
-    {
-      "body": "김동민15",
-      "author": "안녕",
-      "id": "15"
-    },
-    {
-      "body": "김동민16",
-      "author": "안녕",
-      "id": "16"
-    },
-    {
-      "body": "김동민17",
-      "author": "안녕",
-      "id": "17"
-    },
-    {
-      "body": "김동민18",
-      "author": "안녕",
-      "id": "18"
-    },
-    {
-      "body": "김동민19",
-      "author": "안녕",
-      "id": "19"
-    },
-    {
-      "body": "김동민20",
-      "author": "안녕",
-      "id": "20"
-    },
-    {
-      "body": "김동민21",
-      "author": "안녕",
-      "id": "21"
-    },
-    {
-      "body": "김동민22",
-      "author": "안녕",
-      "id": "22"
-    },
-    {
-      "body": "김동민23",
-      "author": "안녕",
-      "id": "23"
-    },
-    {
-      "body": "김동민24",
-      "author": "안녕",
-      "id": "24"
-    },
-
-    {
-      "body": "김동민25",
-      "author": "안녕",
-      "id": "25"
-    },
-    {
-      "body": "김동민26",
-      "author": "안녕",
-      "id": "26"
+      "avatarId": 10,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 146,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Speech%2BBalloon_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Speech+Balloon.png"
+      },
+      "prefix": {
+        "prefixId": 1,
+        "content": "미소천사인"
+      },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["야구"],
+      "disLikes": ["프레피", "유럽 전통"]
     }
   ]
 }

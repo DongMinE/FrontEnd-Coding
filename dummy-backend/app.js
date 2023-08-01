@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 app.get("/posts", async (req, res) => {
   const storedPosts = await getStoredPosts();
   // await new Promise((resolve, reject) => setTimeout(() => resolve(), 1000));
-  res.json({ posts: storedPosts });
+  res.json({ data: storedPosts });
 });
 
 app.get("/posts/:id", async (req, res) => {
@@ -40,4 +40,4 @@ app.post("/posts", async (req, res) => {
   res.status(201).json({ message: "Stored new post.", post: newPost });
 });
 
-app.listen(8080);
+app.listen(8081);
