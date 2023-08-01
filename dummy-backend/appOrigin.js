@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 app.get("/posts", async (req, res) => {
   const storedPosts = await getStoredPosts();
   // await new Promise((resolve, reject) => setTimeout(() => resolve(), 1000));
-  res.json({ data: storedPosts });
+  res.json({ posts: storedPosts });
 });
 
 app.get("/posts/:id", async (req, res) => {
@@ -28,13 +28,16 @@ app.get("/posts/:id", async (req, res) => {
   res.json({ post });
 });
 
-app.post("/picker", async (req, res) => {
-  const data = await getStoredPosts();
+app.post("/posts", async (req, res) => {
+  const existingPosts = await getStoredPosts();
   const postData = req.body;
-
-  // 여기서 원하는 응답 데이터 형태로 조정하여 보내기
-  res.status(201).json({ message: "응답 보냈어", data });
-  console.log("바디 받았어", postData);
+  const newPost = {
+    ...postData,
+    id: Math.random().toString(),
+  };
+  const updatedPosts = [newPost, ...existingPosts];
+  await storePosts(updatedPosts);
+  res.status(201).json({ message: "Stored new post.", post: newPost });
 });
 
 app.listen(8081);

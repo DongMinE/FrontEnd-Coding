@@ -12,10 +12,7 @@
         "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling%2BCat%2Bwith%2BHeart-Eyes_p.png",
         "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling+Cat+with+Heart-Eyes.png"
       },
-      "prefix": {
-        "prefixId": 83,
-        "content": "해도안되는"
-      },
+      "prefix": { "prefixId": 83, "content": "해도안되는" },
       "world": {
         "worldId": 1,
         "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
@@ -34,10 +31,7 @@
         "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Thinking%2BFace_p.png",
         "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Thinking+Face.png"
       },
-      "prefix": {
-        "prefixId": 23,
-        "content": "알통많은"
-      },
+      "prefix": { "prefixId": 23, "content": "알통많은" },
       "world": {
         "worldId": 1,
         "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
@@ -56,10 +50,7 @@
         "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Left%2BSpeech%2BBubble_p.png",
         "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Left+Speech+Bubble.png"
       },
-      "prefix": {
-        "prefixId": 88,
-        "content": "개털인"
-      },
+      "prefix": { "prefixId": 88, "content": "개털인" },
       "world": {
         "worldId": 1,
         "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
@@ -78,10 +69,7 @@
         "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Speech%2BBalloon_p.png",
         "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Speech+Balloon.png"
       },
-      "prefix": {
-        "prefixId": 1,
-        "content": "미소천사인"
-      },
+      "prefix": { "prefixId": 1, "content": "미소천사인" },
       "world": {
         "worldId": 1,
         "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
@@ -89,6 +77,120 @@
       },
       "likes": ["야구"],
       "disLikes": ["프레피", "유럽 전통"]
+    },
+    {
+      "avatarId": 11,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 132,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling%2BCat%2Bwith%2BHeart-Eyes_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling+Cat+with+Heart-Eyes.png"
+      },
+      "prefix": { "prefixId": 83, "content": "해도안되는" },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["테니스", "스노보드"],
+      "disLikes": ["어드벤처", "EDM"]
+    },
+    {
+      "avatarId": 11,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 132,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling%2BCat%2Bwith%2BHeart-Eyes_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling+Cat+with+Heart-Eyes.png"
+      },
+      "prefix": { "prefixId": 83, "content": "해도안되는" },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["테니스", "스노보드"],
+      "disLikes": ["어드벤처", "EDM"]
+    },
+    {
+      "avatarId": 11,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 132,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling%2BCat%2Bwith%2BHeart-Eyes_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling+Cat+with+Heart-Eyes.png"
+      },
+      "prefix": { "prefixId": 83, "content": "해도안되는" },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["테니스", "스노보드"],
+      "disLikes": ["어드벤처", "EDM"]
+    },
+    {
+      "avatarId": 11,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 132,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling%2BCat%2Bwith%2BHeart-Eyes_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling+Cat+with+Heart-Eyes.png"
+      },
+      "prefix": { "prefixId": 83, "content": "해도안되는" },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["테니스", "스노보드"],
+      "disLikes": ["어드벤처", "EDM"]
+    },
+    {
+      "avatarId": 11,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 132,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling%2BCat%2Bwith%2BHeart-Eyes_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling+Cat+with+Heart-Eyes.png"
+      },
+      "prefix": { "prefixId": 83, "content": "해도안되는" },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["테니스", "스노보드"],
+      "disLikes": ["어드벤처", "EDM"]
+    },
+    {
+      "avatarId": 11,
+      "nickname": "테스터",
+      "bio": "",
+      "emoji": {
+        "emojiId": 132,
+        "rate": "N",
+        "imageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling%2BCat%2Bwith%2BHeart-Eyes_p.png",
+        "animatedImageUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/Smiling+Cat+with+Heart-Eyes.png"
+      },
+      "prefix": { "prefixId": 83, "content": "해도안되는" },
+      "world": {
+        "worldId": 1,
+        "openUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/dessert.png",
+        "closeUrl": "https://peekpick-app.s3.ap-northeast-2.amazonaws.com/lock_dessert.png"
+      },
+      "likes": ["테니스", "스노보드"],
+      "disLikes": ["어드벤처", "EDM"]
     }
   ]
 }
