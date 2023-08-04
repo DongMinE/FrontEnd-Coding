@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const { getStoredPosts, storePosts } = require("./data/posts");
+const { getStoredPosts, storePosts, getStoredPosts2 } = require("./data/posts");
 
 const app = express();
 
@@ -37,4 +37,12 @@ app.post("/picker", async (req, res) => {
   console.log("바디 받았어", postData);
 });
 
+app.post("/peek", async (req, res) => {
+  const data = await getStoredPosts2();
+  const postData = req.body;
+
+  // 여기서 원하는 응답 데이터 형태로 조정하여 보내기
+  res.status(201).json({ message: "응답 보냈어", data });
+  console.log("바디 받았어", postData);
+});
 app.listen(8081);
