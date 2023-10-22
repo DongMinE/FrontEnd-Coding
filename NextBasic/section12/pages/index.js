@@ -1,37 +1,25 @@
+import { fetchCountries } from "@/api";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Country from "./country/[code]";
 
-export default function Home() {
-  const code = "kor";
-  const code2 = "eng";
-  const router = useRouter();
-
-  const event = () => {
-    router.push(`/search`);
-  };
-  const event2 = () => {
-    router.push({ pathname: "/country/[code]", query: { code: code2 } });
-  };
+export default function Home({ conturies }) {
   return (
     <div>
-      Home Page
-      <div>
-        <button onClick={event}>서치 페이지 이동</button>
-      </div>
-      <div>
-        <button onClick={event2}>eng 페이지 이동</button>
-      </div>
-      <div>
-        <Link href={"/search"}> Search Page 이동</Link>
-      </div>
-      <div>
-        <Link href={`/country/${code}`}> {code} Page 이동</Link>
-      </div>
-      <div>
-        <Link href={{ pathname: "/country/[code]", query: { code: code2 } }}>
-          {code2} Page 이동2
-        </Link>
-      </div>
+      {conturies.map((country) => (
+        <div key={country.code}>{country.commonName}</div>
+      ))}
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  // ssr을 위해 서버측에서 페이제 컴포넌트에게 전달할 데이터를 설정하는 함수
+
+  const conturies = await fetchCountries();
+  return {
+    props: {
+      conturies,
+    },
+  };
+};
