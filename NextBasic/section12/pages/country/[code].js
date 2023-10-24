@@ -45,12 +45,14 @@ export const getStaticPaths = async () => {
 //SSG 페이지 생성하기
 export const getStaticProps = async (context) => {
   const { code } = context.params;
-  let country = null;
+  console.log(`${code} 페이지 생성!`);
 
+  let country = null;
   if (code) {
     country = await fetchCountry(code);
   }
   return {
     props: { country },
+    revalidate: 3,
   };
 };
