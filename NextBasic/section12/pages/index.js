@@ -1,13 +1,14 @@
 import { fetchCountries } from "@/api";
+import CountryList from "@/components/CountryList";
+import Searchbar from "@/components/Searchbar";
 
 // 원래 CSR 형식 동일
-export default function Home({ conturies }) {
+export default function Home({ countries }) {
   return (
-    <div>
-      {conturies.map((country) => (
-        <div key={country.code}>{country.commonName}</div>
-      ))}
-    </div>
+    <>
+      <Searchbar />
+      <CountryList countries={countries} />
+    </>
   );
 }
 
@@ -30,11 +31,11 @@ getStaticProps - SSG로 렌더링 함 => 처음 빌드될 때 한번만 호출�
 export const getStaticProps = async () => {
   // ssr을 위해 서버측에서 페이제 컴포넌트에게 전달할 데이터를 설정하는 함수
 
-  const conturies = await fetchCountries();
-  console.log("컨츄리 데이터 불러옴");
+  const countries = await fetchCountries();
+  // console.log("컨츄리 데이터 불러옴");
   return {
     props: {
-      conturies,
+      countries,
     },
   };
 };
