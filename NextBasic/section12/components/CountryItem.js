@@ -20,7 +20,7 @@ export default function CountryItem({
   return (
     <div onClick={onClickItem} className={style.container}>
       <div className={style.flag_img}>
-        <Image src={flagImg} fill />
+        <Image src={flagImg} alt={commonName} fill priority />
       </div>
       <div className={style.content}>
         <div className={style.name}>

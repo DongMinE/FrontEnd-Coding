@@ -1,11 +1,18 @@
 import { fetchCountries } from "@/api";
 import CountryList from "@/components/CountryList";
 import Searchbar from "@/components/Searchbar";
+import Head from "next/head";
 
 // 원래 CSR 형식 동일
 export default function Home({ countries }) {
   return (
     <>
+      <Head>
+        <title>NARAS</title>
+        <meta property="og:image" content="/thumbnail.png" />
+        <meta property="og:title" content="NARAS" />
+        <meta property="og:discription" content="전 세계 국가 정보 확인" />
+      </Head>
       <Searchbar />
       <CountryList countries={countries} />
     </>
