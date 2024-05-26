@@ -2,6 +2,7 @@
 
 import { redirect } from "next/navigation";
 import { saveMeal } from "./meals";
+import { revalidatePath } from "next/cache";
 
 function isInvalidText(Text) {
   return !Text || Text.trim() === "";
@@ -35,5 +36,8 @@ export async function shareMeal(prevState, formData) {
   }
 
   await saveMeal(meal);
+  revalidatePath("/meals", "layout"); // 해당페이지 중첩만 검사
+  // revalidatePath("/",'layout'); //모든 페이지 재검사
+
   redirect("/meals");
 }

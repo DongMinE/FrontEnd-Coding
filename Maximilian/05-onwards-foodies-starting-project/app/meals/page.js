@@ -5,8 +5,14 @@ import classes from "./page.module.css";
 import MealsGrid from "@/components/meals/meals-grid";
 import { getMeals } from "@/lib/meals";
 
+export const metadata = {
+  title: "맛있는 음식 공유하기",
+  description: "맛있는 식사들의 레시피를 둘럽세요",
+};
+
 export default function MealsPage() {
   async function Meals() {
+    console.log("음식 가져오는 중");
     const meals = await getMeals();
 
     return <MealsGrid meals={meals} />;
