@@ -14,7 +14,6 @@ export default function MealsPage() {
   async function Meals() {
     console.log("음식 가져오는 중");
     const meals = await getMeals();
-
     return <MealsGrid meals={meals} />;
   }
   return (

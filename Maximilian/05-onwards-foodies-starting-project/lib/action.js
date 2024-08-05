@@ -28,7 +28,8 @@ export async function shareMeal(prevState, formData) {
     !meal.image ||
     meal.image.size === 0
   ) {
-    console.log(prevState);
+    // console.log("formData: ", formData);
+    // console.log("prevState: ", prevState);
     // console.log(formData);
     return {
       message: "허용되지 않는 값 입니다.",
