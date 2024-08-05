@@ -1,7 +1,7 @@
 "use client";
 
-import style from "./navMenu.module.css";
 import { useSelectedLayoutSegment } from "next/navigation";
+import style from "./navMenu.module.css";
 import Link from "next/link";
 
 export default function NavMenu() {

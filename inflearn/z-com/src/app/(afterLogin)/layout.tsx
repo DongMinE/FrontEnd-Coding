@@ -3,6 +3,7 @@ import style from "./layout.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import ZLogo from "@public/zlogo.png";
+import NavMenu from "./_component/NavMenu";
 
 export default function AfterLoginLayout({
   children,
