@@ -1,3 +1,3 @@
 export default function Explore() {
-  return <div>익스플로러</div>;
+  return <div>검색</div>;
 }
