@@ -1,3 +1,6 @@
-export default function Tweet() {
-  return <div>트윗</div>;
+import Home from "@/app/(afterLogin)/home/page";
+import React from "react";
+
+export default function page() {
+  return <Home />;
 }
