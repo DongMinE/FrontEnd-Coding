@@ -35,29 +35,23 @@
 
 .dateInfo {
   width: 100%;
-  border: 1px solid red;
+  position: relative;
 }
 
-.weekDiv,
-.dayDiv {
+.weekDiv {
   display: flex;
-  flex: 1;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  border: 1px solid violet;
+  position: fixed;
+  bottom: 0;
 }
 
 .weekSpan,
 .daySpan {
-  margin: 0 5px;
-  color: #aaa;
-  width: 50px;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 15px;
-  width: 60px;
-  border: 1px solid black;
+  margin-bottom: 10px;
 }
 
 .weekSpan > b {

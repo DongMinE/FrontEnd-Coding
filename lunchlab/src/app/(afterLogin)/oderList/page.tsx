@@ -7,7 +7,7 @@ import { subMonths } from "date-fns";
 export default function OderList() {
   return (
     <section className={style.container}>
-      <CustumCalendarTest />
+      <Calendar />
     </section>
   );
 }
