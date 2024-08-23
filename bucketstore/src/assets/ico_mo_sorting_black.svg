@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 13">
+  <g id="ic_sorting" transform="translate(-1)">
+    <g id="사각형_4836" data-name="사각형 4836" transform="translate(1)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="24" height="13" stroke="none"/>
+      <rect x="0.5" y="0.5" width="23" height="12" fill="none"/>
+    </g>
+    <path id="패스_16332" data-name="패스 16332" d="M2428-1259.939l.707-.707,2.147,2.147v-8.794h1v8.793l2.146-2.146.707.707-3.353,3.353Zm8.852,2.646v-8.792l-2.146,2.146-.706-.707,3.354-3.354,3.353,3.354-.707.707-2.146-2.146v8.793Z" transform="translate(-2426.853 1268.793)"/>
+  </g>
+</svg>

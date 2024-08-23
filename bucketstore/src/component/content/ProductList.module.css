@@ -1,0 +1,108 @@
+.container {
+  cursor: pointer;
+}
+
+@media all and (min-width: 1024px) {
+  .productSection {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0px, 1fr));
+    gap: 60px 1px;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .productSection {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 60px 1px;
+  }
+}
+
+.productImage {
+  position: relative;
+}
+
+.productImage > img {
+  width: 100%;
+  height: 100%;
+}
+
+.favorite {
+  position: absolute;
+  width: 19px;
+  height: 17px;
+  top: 12px;
+  right: 10px;
+  z-index: 30;
+}
+
+.favorite > svg {
+  width: inherit;
+  height: inherit;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding-right: 10px;
+  flex: 1 1;
+}
+
+.productInfo div {
+  font-size: 13px;
+  letter-spacing: -0.001em;
+  text-overflow: ellipsis;
+  line-height: 18px;
+}
+
+.productInfo > div:first-child {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.productInfo > div:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.priceDiv {
+  display: flex;
+  margin-top: 6px;
+  gap: 6px;
+}
+
+.priceDiv div:first-child {
+  font-weight: 600;
+}
+
+.priceDiv div:nth-child(2) {
+  color: #bbb;
+  font-weight: 400;
+}
+
+.productETC {
+  display: flex;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.productETC div {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #999;
+  background-color: #f4f4f4;
+  padding: 3px 7px;
+}
+
+.loading,
+.error {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}

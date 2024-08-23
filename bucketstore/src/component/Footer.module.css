@@ -1,0 +1,17 @@
+.container {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    margin-top: 180px;
+  }
+}

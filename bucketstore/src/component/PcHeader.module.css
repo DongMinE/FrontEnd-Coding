@@ -1,0 +1,80 @@
+.container {
+  display: none;
+  z-index: 30;
+  background-color: black;
+}
+
+@media all and (min-width: 1920px) {
+  .headerDiv {
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .container {
+    display: flex;
+    position: sticky;
+    top: 0;
+  }
+  .headerDiv {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 127px;
+    align-items: center;
+    padding: 23px 10px 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .headerDiv {
+    min-height: 90px;
+  }
+}
+
+.navMenuDiv {
+  display: flex;
+  align-items: center;
+  order: 2;
+  flex: 1;
+}
+
+.detailDiv1,
+.detailDiv2 {
+  display: flex;
+}
+
+.detailDiv1 div:nth-child(1),
+.detailDiv1 div:nth-child(2) {
+  color: #ff5112;
+}
+.navMenuDiv div {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 10px;
+}
+
+.divide {
+  width: 2px;
+  height: 15px;
+  background-color: #fff;
+  margin: 0 10px;
+  order: 1;
+}
+
+@media all and (max-width: 1400px) {
+  .logoDiv {
+    flex: 1;
+  }
+
+  .navMenuDiv {
+    order: 3;
+    width: 100%;
+    flex: auto;
+  }
+}

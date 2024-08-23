@@ -1,0 +1,50 @@
+.userBtnDiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  order: 3;
+}
+
+.userBtnDiv div {
+  position: relative;
+  margin-left: 4px;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.userBtnDiv div > svg {
+  width: 24px;
+  height: 24px;
+}
+
+.userBtnDiv div:last-child > div {
+  position: absolute;
+  transform: translate(-12%, -30px);
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.visible {
+  display: none;
+}
+
+@media all and (max-width: 1400px) {
+  .userBtnDiv {
+    order: 2;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .unVisible {
+    display: none;
+  }
+  .visible {
+    display: inline;
+  }
+  .userBtnDiv div {
+    color: black;
+  }
+}

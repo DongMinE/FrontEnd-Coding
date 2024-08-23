@@ -1,0 +1,22 @@
+.titleSection {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .titleSection {
+    display: flex;
+    margin: 40px 0;
+    padding: 0 20px;
+    font-size: 90px;
+    font-weight: 600;
+  }
+}
+
+.mainContentSeciton {
+  display: flex;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}

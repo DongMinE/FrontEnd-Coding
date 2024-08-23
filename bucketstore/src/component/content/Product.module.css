@@ -1,0 +1,188 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.mobileCategoryList {
+  display: flex;
+  margin: 16px;
+}
+
+.mobileCategory {
+  display: flex;
+  margin-right: 4px;
+  padding: 6px 15px 5px;
+  border: 1px solid #000;
+  color: black;
+  border-radius: 16px;
+  font-size: 13px;
+  height: 31px;
+  line-height: 18px;
+  font-weight: 500;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.selected {
+  background-color: black;
+  color: white;
+}
+
+.productSection {
+  display: flex;
+  flex-direction: column;
+}
+.ProductList {
+  min-height: 630px;
+}
+
+.mobileCategorySection {
+  display: flex;
+  position: sticky;
+  background-color: #fff;
+  z-index: 20;
+  top: 0;
+}
+
+@media all and (min-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+  .mobileCategorySection {
+    display: none;
+  }
+  .productInfo {
+    margin-bottom: 10px;
+  }
+  .mobileSort {
+    display: none;
+  }
+}
+
+.productInfo {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 1023px) {
+  .productInfo {
+    margin: 10px;
+  }
+  .PCSort {
+    display: none;
+  }
+}
+
+.productSort {
+  display: flex;
+  gap: 8px;
+  position: relative;
+  align-items: center;
+}
+
+.productCount {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.mobileSort,
+.sortBtn {
+  border: none;
+  line-height: 18px;
+  font-size: 12px;
+  border-radius: 15px;
+  padding: 4px 33px 5px 11px;
+  font-weight: 500;
+}
+
+.mobileSort.sortBackground {
+  appearance: none;
+  background-image: url("/src/assets/ico_mo_sorting_black.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  width: 120px;
+  height: 29px;
+  background-color: rgb(238, 238, 238);
+  color: rgb(0, 0, 0);
+}
+
+.mobileSort:focus {
+  appearance: none;
+  background-image: url("/src/assets/ico_mo_sorting.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  width: 120px;
+  height: 29px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.PCSort {
+  position: relative;
+  width: 120px;
+  font-size: 13px;
+}
+
+.sortBtn {
+  display: flex;
+  position: relative;
+  width: 120px;
+  text-align: left;
+  line-height: 18px;
+}
+
+.PCsortList {
+  list-style: none;
+  position: absolute;
+  padding: 5px 0;
+  margin: 5px 0;
+  border: 1px solid rgb(221, 221, 221);
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  overflow-y: auto;
+  max-height: 155px;
+  z-index: 20;
+}
+
+.PCbackgroundBlack {
+  background-color: #000;
+  color: #fff;
+}
+
+.PCbackground {
+  background-color: rgb(238, 238, 238);
+  color: #000;
+}
+
+.PCsortsvg {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.PCsortItem {
+  padding: 5px 9px 6px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.001em;
+  color: rgb(0, 0, 0);
+  width: 115px;
+}
+
+.ProductList {
+  z-index: 10;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}

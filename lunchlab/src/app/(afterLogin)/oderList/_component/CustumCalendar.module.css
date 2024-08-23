@@ -1,0 +1,56 @@
+.container {
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 0 auto;
+  flex: 1;
+  width: 90%;
+}
+
+.calendarBox {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 10px;
+  width: 600px;
+}
+
+.calendarBox > div:first-child {
+  margin: 20px 0 10px 15px;
+  font-size: 20px;
+}
+
+.monthDiv {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.monthSpan {
+  font-size: 20px;
+}
+
+.weekDiv,
+.dayDiv {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.weekSpan,
+.daySpan {
+  margin: 0 5px;
+  color: #aaa;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 60px;
+}
+
+.weekSpan > b {
+  color: skyblue;
+}

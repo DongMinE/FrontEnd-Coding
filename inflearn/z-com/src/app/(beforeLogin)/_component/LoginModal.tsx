@@ -1,18 +1,43 @@
 "use client";
 
+import { Router } from "express";
 import style from "./login.module.css";
-import { useState } from "react";
+import { ChangeEventHandler, FormEventHandler, useState } from "react";
+import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 
 export default function LoginModal() {
-  const [id, setId] = useState();
-  const [password, setPassword] = useState();
-  const [message, setMessage] = useState();
-  const onSubmit = () => {};
-  const onClickClose = () => {};
+  const [id, setId] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
+  const router = useRouter();
 
-  const onChangeId = () => {};
+  const onSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
+    e.preventDefault();
+    setMessage("");
+    try {
+      await signIn("credentials", {
+        username: id,
+        password: password,
+        redirect: false,
+      });
+      router.replace("/home");
+    } catch (error) {
+      console.error(error);
+      setMessage("아이디와 비밀번호가 일치하지 않습니다.");
+    }
+  };
+  const onClickClose = () => {
+    router.back();
+  };
 
-  const onChangePassword = () => {};
+  const onChangeId: ChangeEventHandler<HTMLInputElement> = (e) => {
+    setId(e.target.value);
+  };
+
+  const onChangePassword: ChangeEventHandler<HTMLInputElement> = (e) => {
+    setPassword(e.target.value);
+  };
 
   return (
     <div className={style.modalBackground}>
@@ -38,14 +63,7 @@ export default function LoginModal() {
               <label className={style.inputLabel} htmlFor="id">
                 아이디
               </label>
-              <input
-                id="id"
-                className={style.input}
-                value={id}
-                onChange={onChangeId}
-                type="text"
-                placeholder=""
-              />
+              <input id="id" className={style.input} value={id} onChange={onChangeId} type="text" placeholder="" />
             </div>
             <div className={style.inputDiv}>
               <label className={style.inputLabel} htmlFor="password">
