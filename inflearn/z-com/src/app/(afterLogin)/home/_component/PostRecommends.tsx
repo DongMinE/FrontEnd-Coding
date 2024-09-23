@@ -6,7 +6,12 @@ import Post from "../../_component/Post";
 import { Post as IPost } from "@/model/Post";
 
 export default function PostRecommends() {
-  const { data } = useQuery<IPost[]>({ queryKey: ["posts", "recommends"], queryFn: getPostRecommends });
+  const { data } = useQuery<IPost[]>({
+    queryKey: ["posts", "recommends"],
+    queryFn: getPostRecommends,
+    staleTime: 60 * 1000, // 1분 , fresh -> stale
+    gcTime: 300 * 1000,
+  });
 
   return (
     <>

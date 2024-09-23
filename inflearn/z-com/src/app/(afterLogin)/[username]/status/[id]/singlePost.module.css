@@ -14,11 +14,6 @@
   display: flex;
   height: 53px;
   align-items: center;
-  position: fixed;
-  width: inherit;
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  z-index: 1;
 }
 
 .headerTitle {
